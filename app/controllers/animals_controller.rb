@@ -24,7 +24,7 @@ class AnimalsController < ApplicationController
       @animal = Animal.find(params[:id])
       if @animal.update!(animal_params)
         render status: :accepted, json: {
-         message: "Animal info has been updated"
+         message: "Animal info has been updated."
         }
       end
     end
